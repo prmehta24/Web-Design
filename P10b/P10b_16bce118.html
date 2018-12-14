@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>JS Form Validation</title>
+        <style>
+        form{
+            display:block;
+            margin-left:20px;
+        }
+        </style>
+        <script>
+        function validateForm(){
+
+            var ip = document.forms["myForm"]["IP"].value;
+            var iparray = ip.split('.');
+            var fname = document.forms["myForm"]["fullname"].value;
+            var alphanumeric = /^[0-9a-zA-Z ]+$/;
+            var date = document.forms["myForm"]["date"].value;
+            var datearray = date.split('/');
+            var email = document.forms["myForm"]["email"].value;
+            var emailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            var phoneno = document.forms["myForm"]["pno"].value;
+            var rollno = document.forms["myForm"]["rno"].value;
+            var pwd = document.forms["myForm"]["password1"].value;
+            var rpwd = document.forms["myForm"]["password2"].value;
+            var message='';
+
+            if(iparray != null && iparray[0] <= 255 && iparray[1] <= 255 && iparray[2] <= 255 && iparray[3] <= 255)
+            {
+
+            }
+            else
+            {
+                alert("IP Address Format does not match.");
+                return false;
+            }
+            if(alphanumeric.test(fname))
+            {
+
+            }
+            else
+            {
+                alert('Full Name is not proper.');
+                return false;
+            }
+             if(datearray != null && datearray[0] <= 31 && datearray[1] <= 12 && datearray[2] >= 1000)
+            {
+
+            }
+            else
+            {
+                alert('Date not proper.');
+                return false;
+            }
+            if(emailformat.test(email))
+            {
+
+            }
+            else
+            {
+                alert('Email not proper.');
+                return false;
+            }
+            if(phoneno.length<10||isNaN(phoneno))
+            {
+                alert("Phone No must consist of 10+ digits.");
+                return false;
+            }
+            if(rollno=="")
+            {
+                alert("Roll No must be filled out.")
+                return false;
+            }
+            if(pwd=='' || rpwd=='' || pwd!=rpwd)
+            {
+                alert("Password Mismatch! OR Not filled");
+                return false;
+            }
+            return true;
+            
+            
+           
+
+
+        }
+        </script>
+    </head>
+    <body>
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            IP Address:<br/>
+            <input type="text" name="IP" placeholder="xxx.xxx.xxx.xxx (x upto 255)"/><br/>
+            Full Name:<br/>
+            <input type="text" name="fullname" placeholder="alphanumeric values only"/><br/>
+            Date:<br/>
+            <input type="text" name="date" placeholder="DD/MM/YYYY"/><br/>
+            Email:<br/>
+            <input type="text" name="email" placeholder="emailid@host.com"/><br/>
+            Phone No:<br/>
+            <input type="text" name="pno" placeholder="10 digits+"/><br/>
+            Roll No:<br/>
+            <input type="text" name="rno" placeholder="required"/><br/>
+            Password:<br/>
+            <input type="password" name="password1"/><br/>
+            Retype Password:<br/>
+            <input type="password" name="password2" placeholder="must be same as above"/><br/><br/>
+            <input type="Submit" value="Submit"/>
+            
+        </form>
+    </body>
+</html>

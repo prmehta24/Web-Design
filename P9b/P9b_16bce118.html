@@ -1,0 +1,65 @@
+   y6     <html>
+    <head>
+        <title>Convert number to human readable string.
+        </title>
+        <style></style>
+        <script>
+
+            window.onload = function a()
+            {
+                    var num='';
+                var bodyelement=document.getElementById('mainbody');
+                while(num!=='END')
+                {
+                    num=prompt("Enter a number");
+                    if(num=='END')
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        var number=parseInt(num);
+                        
+                        var node=document.createElement('P');
+                        if(number>0 && number<11)
+                        {
+                            if(number==1)
+                            {
+                                var node2 = document.createTextNode(number+'st');
+                                
+                            }
+                            else if(number==2)
+                            {
+                            
+                                var node2 = document.createTextNode(2+'nd');
+                            }
+                            else if(number==3)
+                            {
+                                
+                                var node2 = document.createTextNode(3+'rd');
+                            }
+                            else
+                            {
+                                
+                                var node2 = document.createTextNode(number+'th');
+                            }
+                        }
+                        else
+                        {
+                            
+                            var node2 = document.createTextNode('Out of range');
+                        }
+                        node.appendChild(node2);
+                        document.getElementById('mainbody').appendChild(node);
+                    }
+                    
+                }
+            }
+            
+
+        </script>
+    </head>
+    <body id="mainbody">
+
+    </body>
+</html>

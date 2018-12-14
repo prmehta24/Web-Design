@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            CSS Font/Background Properties
+        </title>
+        <style>
+            .divs{
+                padding:30px;
+            }
+        </style>
+    </head>
+    <body style="margin:100px;">
+        
+        <h1>Background Properties</h1>
+        <div class="divs" style="background-color:cadetblue;">
+            <h3>Background Color with valid color name</h3>
+        </div>
+        <div class="divs" style="background-color:#ff0000;">
+            <h3>Background Color with HEX value.</h3>
+        </div>
+        <div class="divs" style="background-color:rgb(45,123,68);">
+            <h3>Background Color with an RGB value.</h3>
+        </div>
+        <div class="divs" style="background-image:url(bluebackground.jpg);">
+            <h3>Background Image. - Repeat</h3>
+        </div>
+        <hr/>
+        <div class="divs" style="background-image:url(bluebackground.jpg);background-repeat:no-repeat;">
+            <h3>Background Image.- No Repeat</h3>
+        </div>
+        <div class="divs" style="background-image:url(bluebackground.jpg);background-repeat:no-repeat;background-position: right ;">
+            <h3>Background Image.- No Repeat - Position:Right</h3>
+        </div>
+        <div class="divs" style="background-image:url(bluebackground.jpg);background-repeat:no-repeat;background-position: center ;background-attachment: fixed;">
+            <h3>Background Image.- No Repeat - Position : Center Attachment - Fixed</h3>
+        </div>
+
+
+        <br/>
+
+
+        <h1>Font Properties</h1>
+        <div class="divs" style="background-color:peachpuff;">
+            <span style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Font Family : Franklin Gothic Medium</span>
+        </div>
+        <div class="divs" style="background-color:peachpuff;">
+            <span style="font-family:'Courier New', Courier, monospace">Font Family : Courier</span>
+        </div>
+        <div class="divs" style="background-color:peachpuff;">
+            <span style="font-style:italic">Font Style : Italics</span>
+        </div>
+        <div class="divs" style="background-color:peachpuff;">
+            <span style="font-style:oblique">Font Style : oblique</span>
+        </div>
+        <div class="divs" style="background-color:peachpuff;">
+            <span style="font-size:30px">Font Size via pixels - changes with zoom</span>
+        </div>
+        <div class="divs" style="background-color:peachpuff;">
+            <span style="font-size:2em">Font Size via em - recommended by W3C</span>
+        </div>
+        <div class="divs" style="background-color:peachpuff;">
+            <span style="font-size:80%">Font Size via % </span>
+        </div>
+        <div class="divs" style="background-color:peachpuff;">
+            <span style="font-weight:bold">For emphasized text - bold </span>
+        </div>
+        <div class="divs" style="background-color:peachpuff;">
+            <span style="font-size:5vw">Scales with change in browser window dimensions </span>
+        </div>
+        <div class="divs" style="background-color:peachpuff;">
+            <span style="font-variant:small-caps">Miniature Capital Letters ! </span>
+        </div>
+
+
+    </body>
+</html>

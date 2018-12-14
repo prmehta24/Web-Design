@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+            table{
+                border-top:3px solid black;
+                border-bottom:3px solid black;
+                width:750px;
+            }
+            caption{
+                text-align: right;
+                font-variant: small-caps;
+            }
+            th{
+                text-align:center;
+            }
+            td{
+                text-align:left;
+            }
+            #YEAR{
+                padding-top:2px;
+                padding-bottom:15px;
+            }
+            .dotborder{
+                border-left:10px dotted black;
+            }
+            .table1:nth-child(even){
+                background-color: whitesmoke;
+            }
+            .table1:nth-child(odd){
+                background-color: white;
+            }
+        </style>
+        <title>CSS Table</title>
+    </head>
+    <body>
+        <table cellspacing=0 cellpadding=5>
+            <caption>Value of fruits in rupees per kg or per unit</caption>
+            <tr >
+                <th rowspan=2 style="border-bottom:1px solid grey;">FRUIT CROPS</th>
+                <th colspan=2 id="YEAR"style="border-bottom:1px solid grey;">YEAR</th>
+                <th colspan=2 rowspan=2 style="border-bottom:1px solid grey;">DESCRIPTION</th>
+            </tr>
+            <tr>
+                <th style="border-bottom:1px solid grey;">2016</th>
+                <th style="border-bottom:1px solid grey;">2017</th>
+            </tr>
+            <tr class="table1">
+                <th>Mango</th>
+                <td>&#8377;75</td>
+                <td>&#8377;85</td>
+                <td>Mangoes are juicy stone fruit(drupe) from numerous species of tropical trees belonging to the flowering plant genus</td>
+                <td class="dotborder">Mangifera,cultivated mostly for their edible fruit.</td>
+            </tr>
+            <tr class="table1">
+                <th>Lychee</th>
+                <td>&#8377;23</td>
+                <td>&#8377;25</td>
+                <td>The lychee is the most renowned of a group of edible fruits of the soapberry.</td>
+                <td class="dotborder">family, Sapindaceae. It is botnically designated Litchi chinensis Sonn.</td>
+            </tr>
+            <tr class="table1">
+                <th>Banana</th>
+                <td>&#8377;18</td>
+                <td>&#8377;20</td>
+                <td>The banana plant is the largest herbaceous flowering plant. All the above-ground</td>
+                <td class="dotborder">parts of a banana plant grow from a structure usually called a "corm".</td>
+            </tr>
+            <tr class="table1">
+                <th>Pomelo</th>
+                <td>&#8377;45</td>
+                <td>&#8377;50</td>
+                <td>The pomelo, Citrus maxima or Citrus grandis, also called pomello, pummelo, batabi or jambura(Bengali), is a natural</td>
+                <td class="dotborder">(non-hybrid) citrus fruit, similar in appearance to a large grapefruit, native to South and Southeast Asia.</td>
+            </tr>
+            <tr >
+                <th colspan=5 style="text-align:center;">REPORT FOR THE YEAR 2016 AND 2017</th>
+            </tr>
+        </table>
+        
+        
+    </body>
+</html>

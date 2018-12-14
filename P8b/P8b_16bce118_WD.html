@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Digits2Number</title>
+        <script>
+            var setofno = [];
+            var n=prompt("Enter length of number.");
+            for(var i=0;i<n;i++)
+            {
+                setofno.push(prompt("Add digit "+(i+1)));
+            }
+            console.log(setofno);
+            var num="";
+            for(var j=0;j<setofno.length;j++)
+            {
+                num+=setofno[j];
+            }
+            document.write(parseInt(num));
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

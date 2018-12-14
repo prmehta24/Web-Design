@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Table : Practical 3a</title>
+        <style>
+            th,td {border: 1px solid black}
+        </style>
+    </head>
+    <body>
+        <table style="border: 2px solid black">
+                <caption><strong>Caption: Table Example</strong></caption>
+            
+                <tr>
+                    <th colspan="5">Heading-1</th>
+                    <th rowspan="2" colspan="3">RIGHT CORNER OF TABLE</th>
+                </tr>
+                <tr>
+                    <th colspan="4">Header-2</th> 
+                    <th >Header-3</th> 
+                </tr>
+            
+            
+                    <tr>
+                        <td colspan="3" >
+                            <ol>
+                                <li>Lists can be table data</li>
+                                <li>Images can be table data</li>
+                            </ol>
+                        </td>
+                        <td rowspan="2">Two Tall</td>
+                        <td colspan="2" >Two columns merged</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><img src="flower.jpg" style="height:200px;width:200px"/></td>
+                        <td>Data here</td>
+                        <td>
+                            <table>
+                                <caption><strong>Caption: Nested Table</strong></caption>
+                                <tr>
+                                    <th>Header</th>
+                                </tr>
+                                <tr>
+                                    <td>Cell data</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <strong>Multiple Lines:</strong><br/>
+                            Line 1<br/>
+                            Line 2<br/>
+                            Line 3<br/>
+                        </td>
+                    </tr>
+                 
+           
+            
+                <tr>
+                    <td colspan="8" style="text-align:center"><strong>Table Footer</strong></td>
+                </tr>
+            
+            
+        </table>
+    </body>
+</html>

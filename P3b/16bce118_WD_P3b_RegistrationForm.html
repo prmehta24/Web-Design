@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <title>GRE Registration Form</title>
+        <style>
+            .titlediv{
+                width:200px;
+                float:left;
+            }
+            .labelspan{
+                font-size:18px;
+            }
+            .formgrp{
+                margin-top:5px;
+                margin-bottom:5px;
+            }
+        </style>
+    </head>
+    <body style="margin:100px;background-color: aqua">
+        <div style="text-align:center;background-color:white">
+            <header style="padding-top:10px;">
+                    <h1 >Create a Test Taker Account</h1>
+                    <hr style="background-color:aqua;height:1px;width:800px;" >
+            </header>
+            <div >
+               <form style="width:800px;padding-bottom:10px;margin: 0 auto;text-align:left">
+                    <h2>Personal Information</h2>
+                        <div class="formgrp">
+                            <div class="titlediv">
+                                <span class="labelspan">First Name:</span>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Enter your First Name">
+                            </div>
+                        </div>
+                        <div class="formgrp">
+                            <div class="titlediv">
+                                <span class="labelspan">Last Name:</span>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Enter your Last Name">
+                            </div>
+                        </div>
+                        <div class="formgrp">
+                            <div class="titlediv">
+                                <span class="labelspan">Date of Birth:</span>
+                            </div>
+                            <div>
+                                <select>
+                                    <option>Month</option>
+                                    <option>Jan</option>
+                                    <option>Feb</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>Jun</option>
+                                    <option>July</option>
+                                    <option>Aug</option>
+                                    <option>Sept</option>
+                                    <option>Oct</option>
+                                    <option>Nov</option>
+                                    <option>Dec</option>
+                                </select>
+                                <select>
+                                        <option>Day</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                    </select>
+                                <input type="text" placeholder="YYYY" size="2" maxlength="4">
+                            </div>
+                        </div>
+                        <div class="formgrp">
+                            <div class="titlediv">
+                                <span class="labelspan">Gender:</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="Gender" >Male</input>
+                                <input type="radio" name="Gender" >Female</input>
+                            </div>
+                        </div>
+                        <div class="formgrp">
+                                <div class="titlediv">
+                                    <span class="labelspan">Email:</span>
+                                </div>
+                                <div>
+                                    <input type="email" placeholder="Enter your email"/>
+                                    
+                                </div>
+                        </div>
+                        
+                    <h2>Address</h2>
+                        <div class="formgrp">
+                                <div class="titlediv">
+                                    <span class="labelspan">Country:</span>
+                                </div>
+                                <div>
+                                    <input list="countries">
+                                    <datalist id="countries">
+                                        <option>USA</option>
+                                        <option>India</option>
+                                    </datalist>
+                                    
+                                </div>
+                        </div>
+                        <div class="formgrp">
+                                <div class="titlediv">
+                                    <span class="labelspan">Address Line 1:</span>
+                                </div>
+                                <div>
+                                    <input type="text"/>
+                                </div>
+                        </div>
+                        <div class="formgrp">
+                                <div class="titlediv">
+                                    <span class="labelspan">Address Line 2:</span>
+                                </div>
+                                <div>
+                                    <input type="text"/>
+                                </div>
+                        </div>
+                        <div class="formgrp">
+                                <div class="titlediv">
+                                    <span class="labelspan">City:</span>
+                                </div>
+                                <div>
+                                    <input type="text"/>
+                                </div>
+                        </div>
+                        <div class="formgrp">
+                                <div class="titlediv">
+                                    <span class="labelspan">State:</span>
+                                </div>
+                                <div>
+                                    <input list="states">
+                                    <datalist id="states">
+                                        <option>Massachusetts</option>
+                                        <option>Gujarat</option>
+                                    </datalist>
+                                    
+                                </div>
+                        </div>
+
+                    <h2>Phone</h2>
+                    <h3>Primary Phone</h3>
+                    <div class="formgrp">
+                        <div class="titlediv">
+                            <span class="labelspan">Number:</span>
+                        </div>
+                        <div>
+                            <input type="text"/>
+                        </div>
+                    </div>
+                    <div class="formgrp">
+                        <div class="titlediv">
+                            <span class="labelspan">Type:</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="phonetype" value="Landline"/>Landline
+                            <input type="radio" name="phonetype" value="Mobile"/>Mobile<br/>
+                        </div>
+                    </div>
+                    <h3>Alternate Phone</h3>
+                    <div class="formgrp">
+                        <div class="titlediv">
+                            <span class="labelspan">Number:</span>
+                        </div>
+                        <div>
+                            <input type="text"/>
+                        </div>
+                    </div>
+                    <div class="formgrp">
+                        <div class="titlediv">
+                            <span class="labelspan">Type:</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="phonetype" value="Landline"/>Landline
+                            <input type="radio" name="phonetype" value="Mobile"/>Mobile<br/>
+                        </div>
+                    </div>
+                    <h2>Communication Preferences</h2>
+                    <div class="formgrp">
+                        <div>
+                            <input type="checkbox" value="YesEmail"/>I would like to receive emails regarding new products from ETS.
+                            
+                        </div>
+                    </div>
+                    <div class="formgrp" style="padding-top:10px;">
+                        <div>
+                            <input style="border:solid black 1px;background-color:aqua;border-radius:5px;font-size:16px;" type="submit" value="Submit"/>
+                        </div>
+                    </div>
+
+               </form>
+            </div>
+        </div>
+        
+       
+    </body>
+</html>

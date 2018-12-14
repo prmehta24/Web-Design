@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Various Border Styles</title>
+        <style>
+            #Fig1V1{
+                width:300px;
+                height:300px;
+                border:8px solid #FF0000;
+                outline-style:dashed;
+                outline-color: white;
+                outline-offset: -5px;
+                outline-width: 2px;
+                justify-content: center;
+                display:flex;
+                align-items: center;
+                float:left;
+                margin-right:10px;
+                margin-bottom:10px;
+                
+                
+            }
+            #Fig1V2{
+                width:300px;
+                height:300px;
+                border:8px double #FF0000;
+                justify-content: center;
+                display:flex;
+                align-items: center;
+                position:relative;
+                float:left;
+                margin-right:10px;
+            }
+            #Fig1V2:before{
+                content:'';
+                width:306px;
+                height:306px;
+                position:absolute;
+                border:2px dashed red;
+                left:-5px;
+                top:-5px;
+                
+            }
+            #Fig2{
+                width:300px;
+                height:100px;
+                border-top:4px solid black;
+                border-right:4px double black;
+                border-bottom:4px dashed black;
+                border-left: 4px dotted black;
+                justify-content: center;
+                display:flex;
+                align-items: center;
+                
+                
+            }
+            .ExampleFigs{
+                width:300px;
+                height:300px;
+                justify-content: center;
+                display:flex;
+                align-items: center;
+                
+                
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="Fig1V1">
+        
+            <div>Figure 1 using outline and border.</div>
+        
+        </div>
+        <div id="Fig1V2">
+        
+                <div>Figure 1 using borders only.</div>
+            
+        </div>
+        <div id="Fig2">
+        
+                <div>Figure 2.</div>
+            
+        </div>
+        <div class="ExampleFigs" style="border-left:10px solid black;border-top:10px solid white;border-bottom:10px solid white;border-right:10px solid white;clear:both;float:left;margin-right:10px;margin-bottom: 10px;">
+                <div>Single Border</div>
+            
+        </div>
+        <div class="ExampleFigs" style="border:10px outset aquamarine;float:left;margin-right:10px;">
+                <div>Outset</div>        
+        </div>
+        <div class="ExampleFigs" style="border:10px inset blueviolet;float:left;margin-right:10px;">
+                <div>Inset</div>   
+        </div>
+        <div class="ExampleFigs" style="border:10px ridge royalblue;float:left;margin-right:10px;">
+                <div>Ridge</div>     
+
+        </div>
+        <div class="ExampleFigs" style="border:10px groove blue;clear:both;float:left;margin-right: 10px;                                                                                                                                                                                                                                                               ">
+                <div>Groove</div>
+
+        </div>
+        <div class="ExampleFigs" style="border:10px solid greenyellow;float:left;border-radius: 5px;">
+                <div>Round Borders</div>
+
+        </div>
+
+        
+
+    </body>
+</html>

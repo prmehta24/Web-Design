@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Merging two arrays</title>
+        <style></style>
+        <script>
+            var a = [1,2,3,4,5]
+            alert("Array 1 is "+a);
+            var b = [2,4,6,8,10]
+            alert("Array 2 is "+b);
+            for(var i=0;i<b.length;i++)
+            {
+                a.push(b[i])
+            }
+            console.log(a);
+            var set=new Set(a);
+            var arr = Array.from(set);
+            document.write(arr);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
